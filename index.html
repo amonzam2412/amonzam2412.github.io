@@ -1,121 +1,74 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Examen</title>
-
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Raven Games: descubre Raven Strike, el battle royale futurista gratuito.">
+<title>Raven Games | Raven Strike</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header>
-
-        <h1>Examen</h1>
-
-        <p>2ª GD CFGB Informática de Oficina </p>
-
-    </header>
-
-    <nav>
-
-        <a href="#inicio">Inicio</a>
-
-        <a href="#sobre-mi">Sobre mí</a>
-
-        <a href="#contacto">Contacto</a>
-
-    </nav>
-
-    <main>
-
-        <section id="inicio" class="presentacion">
-
-            <img width="200" src="ADI4_foto.jpeg">
-
-            <p></p>
-
-            <a href="https://sites.google.com/g.educaand.es/pizerria-web-/inicio"> <button><p>Descubrir más</p></button></a>
-
-        </section>
-
-        <section id="sobre-mi">
-
-            <h2>ASIGNATURAS</h2>
-
-            <div class="tarjetas">
-
-                <article class="tarjeta">
-
-                    <h3>Comunicacion y ciencias sociales</h3>
-estudia cómo los seres humanos intercambian información, significados y símbolos en un contexto social, cultural, político y económico determinado
-                    <p>  
-                </article>
-
-                <article class="tarjeta">
-
-                    <h3>English</h3>
-enseña las cuatro habilidades comunicativas fundamentales del idioma —comprensión auditiva (listening), expresión oral (speaking), comprensión lectora (reading) y expresión escrita (writing)— a través de la gramática y el vocabulario
-                    <p></p>
-
-                </article>
-
-                <article class="tarjeta">
-
-                    <h3> Ciencias aplicadas</h3>
- utilizan los conocimientos y el método científico de una o varias disciplinas con el objetivo de resolver problemas prácticos y mejorar la calidad de vida de las personas
-                    <p></p>
-
-                </article>
-
-                 <article class="tarjeta">
-
-                    <h3>Ofimatica y archivos de documentos</h3>
- combinan el uso de herramientas informáticas con la organización y custodia segura de la información en una empresa u oficina
-                    <p></p>
-
-        
-
-                    </article>
-
-                <article class="tarjeta">
-
-                    <h3>archivos de documentos y Intalacion y mantenimiento de redes para transmision de datos</h3>
-Formación Profesional Básica (FPB) en Informática y Comunicaciones
-                    <p></p>
-
-                </article>
-
-                
-
-
-            </div>
-
-        </section>
-
-        <section id="contacto">
-
-            <h2>Correo</h2>
-
-            <p>Correo: amonzam2412@g.educaand.es</p>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>© 2026 Mi primera página web</p>
-
-    </footer>
-
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#inicio" aria-label="Raven Games inicio"><img class="brand-logo" src="raven-logo.png" alt="Emblema original de Raven Games"><span>RAVEN<small>G A M E S</small></span></a>
+  <nav class="links" id="navlinks"><a href="#inicio">Inicio</a><a href="#juego">El juego</a><a href="#empresa">La empresa</a><a href="#tienda">Tienda</a><a href="#noticias">Noticias</a><a href="#comunidad">Comunidad</a></nav>
+  <button class="btn" onclick="openModal('login')">Iniciar sesión</button>
+  <button class="menu" aria-label="Abrir menú" onclick="document.getElementById('navlinks').classList.toggle('show')">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap"><div class="hero-copy">
+  <div class="eyebrow">El próximo salto empieza aquí</div>
+  <h1>RAVEN <span>STRIKE</span></h1>
+  <h2>Tu mundo. Tu escuadrón. Tu leyenda.</h2>
+  <p>Entra en un universo de acción, estrategia y aventuras. Forma equipo, explora escenarios increíbles y demuestra de qué está hecho tu escuadrón.</p>
+  <div class="actions"><a class="btn" href="#juego">▶ &nbsp; Descubre el juego</a><button class="btn secondary" onclick="openModal('trailer')">Ver tráiler</button></div>
+  <div class="platforms"><span>PC</span><span>PlayStation</span><span>Xbox</span><span>Switch</span><span>Móvil · objetivo futuro</span></div>
+ </div></div>
+</section>
+<section id="juego">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Diseñado para jugar juntos</div><h2>La batalla evoluciona.</h2></div><p>Un concepto de juego gratuito con contenido en evolución, diseñado para conectar a jugadores y comunidades.</p></div>
+  <div class="features">
+   <article class="feature"><div class="icon">⌘</div><h3>Juego multiplataforma</h3><p>El objetivo: reunir a tus amigos en distintas plataformas compatibles.</p></article>
+   <article class="feature"><div class="icon">✦</div><h3>Tu estilo, tus reglas</h3><p>Personajes, skins, gestos y accesorios para crear una identidad propia.</p></article>
+   <article class="feature"><div class="icon">▤</div><h3>Pase de temporada</h3><p>Misiones, progresión y recompensas durante cada temporada.</p></article>
+   <article class="feature"><div class="icon">⬡</div><h3>Un juego más seguro</h3><p>Moderación, herramientas de denuncia y opciones para familias.</p></article>
+   <article class="feature"><div class="icon">◎</div><h3>Eventos constantes</h3><p>Nuevos mapas, modos y eventos especiales a medida que evoluciona el juego.</p></article>
+  </div>
+ </div>
+</section>
+<section id="empresa">
+ <div class="wrap about-grid">
+  <div class="preview"><button class="play" aria-label="Ver presentación" onclick="openModal('trailer')">▶</button><div class="preview-label">RAVEN STRIKE · PRESENTACIÓN DEL CONCEPTO</div></div>
+  <div class="about"><div class="eyebrow">Quiénes somos</div><h2>Imaginamos mundos.<br>Conectamos jugadores.</h2><p>Raven Games es una empresa ficticia creada como concepto para un proyecto intermodular. Nuestra visión es desarrollar experiencias digitales accesibles, creativas y sociales, empezando por Raven Strike.</p><p>Queremos construir una comunidad internacional, escuchar a los jugadores y hacer evolucionar nuestros mundos con responsabilidad.</p><div class="stats"><div><strong>01</strong><span>Juego principal</span></div><div><strong>∞</strong><span>Ideas por explorar</span></div><div><strong>Global</strong><span>Visión de futuro</span></div></div><a class="btn secondary" href="#noticias">Explora las novedades →</a></div>
+ </div>
+</section>
+<section class="shop" id="tienda">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Personaliza tu experiencia</div><h2>La tienda Raven Strike</h2></div><p>Concepto de tienda con artículos cosméticos opcionales. Los productos y precios aquí son ilustrativos.</p></div>
+  <div class="cards">
+   <article class="item"><div class="item-art">⚡</div><div class="item-body"><small>SKIN DESTACADA</small><h3>Centinela Neón</h3><p>Una apariencia futurista para entrar en escena con estilo.</p><button class="btn secondary" onclick="openModal('shop')">Ver artículo</button></div></article>
+   <article class="item"><div class="item-art">✦</div><div class="item-body"><small>PACK DE COSMÉTICOS</small><h3>Órbita Cero</h3><p>Una colección temática de accesorios y efectos visuales.</p><button class="btn secondary" onclick="openModal('shop')">Ver artículo</button></div></article>
+   <article class="item"><div class="item-art">🚀</div><div class="item-body"><small>PASE DE TEMPORADA</small><h3>Frontera Estelar</h3><p>Progresión, desafíos y recompensas para desbloquear jugando.</p><button class="btn secondary" onclick="openModal('shop')">Ver artículo</button></div></article>
+  </div>
+ </div>
+</section>
+<section id="noticias">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Desde el universo Raven Strike</div><h2>Noticias y actualizaciones</h2></div><p>Un espacio para anuncios, avances de desarrollo y noticias de la comunidad.</p></div>
+  <div class="news-grid">
+   <article class="news"><time>DIARIO DE DESARROLLO</time><h3>Construyendo el universo Raven Strike</h3><p>Estamos definiendo el mundo, el estilo visual y las bases de la experiencia de juego.</p></article>
+   <article class="news"><time>DISEÑO DEL JUEGO</time><h3>Personalización sin límites</h3><p>Exploramos ideas para cosméticos, identidad de personaje y recompensas de temporada.</p></article>
+   <article class="news"><time>COMUNIDAD</time><h3>Jugar juntos, jugar mejor</h3><p>La seguridad, la accesibilidad y el juego respetuoso forman parte de nuestra visión.</p></article>
+  </div>
+ </div>
+</section>
+<section id="comunidad"><div class="wrap"><div class="cta"><div><div class="eyebrow" style="color:#e4f7ff">Únete a la próxima aventura</div><h2>El universo Raven Strike te espera.</h2><p>Descubre el proyecto y acompaña su evolución.</p></div><button class="btn" style="background:#fff;color:#18223b" onclick="openModal('community')">Quiero saber más ↗</button></div></div></section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#inicio"><img class="brand-logo" src="raven-logo.png" alt="Emblema original de Raven Games"><span>RAVEN<small>G A M E S</small></span></a><div class="foot-links"><a href="#juego">El juego</a><a href="#empresa">La empresa</a><a href="#tienda">Tienda</a><a href="#noticias">Noticias</a></div><span>© 2026 Raven Games · Proyecto conceptual</span></div></footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="close" aria-label="Cerrar" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
 </body>
-
 </html>
