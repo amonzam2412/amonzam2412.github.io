@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inicia sesión en tu cuenta de Raven Games.">
+  <meta name="theme-color" content="#0b0712">
+  <title>Iniciar sesión | Raven Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-art" aria-label="Raven Strike">
+      <a class="brand login-brand" href="raven.html" aria-label="Volver a Raven Games">
+        <img class="brand-logo" src="raven-logo.png" alt="">
+        <span>RAVEN<small>G A M E S</small></span>
+      </a>
+      <div class="art-copy">
+        <span class="eyebrow">TU ESCUADRÓN TE ESPERA</span>
+        <h1>Vuelve al<br><span>campo de batalla.</span></h1>
+        <p>Entra en tu universo. Reúne a tu equipo. Escribe la siguiente leyenda.</p>
+      </div>
+      <div class="art-foot"><span class="live-dot"></span> RAVEN STRIKE <span class="art-separator">/</span> ACCESO DE JUGADOR</div>
+    </section>
+
+    <section class="login-side">
+      <a class="back-link" href="raven.html"><span aria-hidden="true">←</span> Volver a Raven Games</a>
+      <div class="login-card">
+        <div class="mobile-mark"><img src="raven-logo.png" alt=""><span>RAVEN GAMES</span></div>
+        <div class="eyebrow">BIENVENIDO DE NUEVO</div>
+        <h2>Iniciar sesión</h2>
+        <p class="login-intro">Introduce tus datos para continuar.</p>
+
+        <form id="loginForm" novalidate>
+          <label for="email">Correo electrónico o nombre de usuario</label>
+          <div class="field-wrap"><span class="field-icon" aria-hidden="true">◎</span><input id="email" name="email" type="text" autocomplete="username" placeholder="jugador@ejemplo.com" required></div>
+
+          <div class="password-heading"><label for="password">Contraseña</label><a href="#ayuda" id="forgotLink">¿La has olvidado?</a></div>
+          <div class="field-wrap"><span class="field-icon" aria-hidden="true">⌑</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Tu contraseña" required minlength="6"><button class="toggle-password" type="button" id="togglePassword" aria-label="Mostrar contraseña">Ver</button></div>
+
+          <label class="remember"><input type="checkbox" name="remember"> <span>Mantener la sesión iniciada</span></label>
+          <button class="login-submit" type="submit">Entrar en Raven <span aria-hidden="true">→</span></button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="separator"><span></span><small>O CONTINÚA CON</small><span></span></div>
+        <div class="social-buttons"><button type="button" class="social-button" data-provider="Discord"><span class="discord-mark">◉</span> Discord</button><button type="button" class="social-button" data-provider="Google"><span class="google-mark">G</span> Google</button></div>
+        <p class="signup-line">¿Nuevo en Raven? <a href="#crear-cuenta" id="signupLink">Crear una cuenta</a></p>
+        <p class="legal">Al continuar, aceptas las <a href="#condiciones">Condiciones de uso</a> y la <a href="#privacidad">Política de privacidad</a>.</p>
+      </div>
+      <div class="side-footer"><span>© 2026 Raven Games</span><span>Hecho para jugar juntos <b>✦</b></span></div>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

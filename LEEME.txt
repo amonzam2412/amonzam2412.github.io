@@ -1,0 +1,18 @@
+RAVEN GAMES — WEB COMPLETA
+
+Páginas incluidas:
+- index.html: entrada principal (también disponible como raven.html)
+- raven.html: página de Raven Games
+- raven-strike.html: página del juego y tráiler reproducible
+- login.html: inicio de sesión de demostración
+
+Archivos de estilos y scripts:
+- styles.css / script.js
+- raven-strike.css / raven-strike.js
+- login.css / login.js
+
+Multimedia en assets/: logo, arte panorámico y raven-strike-trailer.mp4.
+
+USO: descomprime todo el ZIP y abre index.html. Mantén todos los archivos y la carpeta assets juntos. El tráiler dura 15 segundos y es una pieza conceptual creada con arte original y sonido ambiental sintético; no es gameplay real.
+
+IMPORTANTE: el login es una maqueta visual y no crea ni verifica cuentas reales. Tienda, notificaciones y descarga del juego también son elementos conceptuales.
