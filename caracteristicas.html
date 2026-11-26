@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raven Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="#" onclick="showPage('inicio')">
+    🐦‍⬛ RAVEN GAMES
+  </a>
+
+  <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+  <nav id="navigation">
+    <button onclick="showPage('inicio')">Inicio</button>
+    <button onclick="showPage('tienda')">Tienda</button>
+    <button onclick="showPage('pase')">Pase de batalla</button>
+    <button onclick="showPage('coins')">Raven Coins</button>
+    <button onclick="showPage('misiones')">Misiones</button>
+    <button onclick="showPage('amigos')">Amigos</button>
+    <button onclick="showPage('noticias')">Noticias</button>
+  </nav>
+
+  <div class="wallet">
+    🐦 <span id="balance">2500</span> Coins
+  </div>
+</header>
+
+<main>
+
+<section id="inicio" class="page active">
+  <div class="hero">
+    <p class="eyebrow">RAVEN GAMES PRESENTA</p>
+    <h1>RAVEN STRIKE</h1>
+    <p>Una nueva experiencia. Una nueva temporada.</p>
+    <button class="primary" onclick="showPage('tienda')">
+      Explorar tienda
+    </button>
+  </div>
+
+  <h2>Explora Raven Games</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>🛍️ Tienda</h3>
+      <p>Descubre skins y accesorios.</p>
+      <button onclick="showPage('tienda')">Entrar</button>
+    </article>
+    <article class="card">
+      <h3>🎟️ Pase de batalla</h3>
+      <p>Desbloquea recompensas.</p>
+      <button onclick="showPage('pase')">Entrar</button>
+    </article>
+    <article class="card">
+      <h3>🎯 Misiones</h3>
+      <p>Completa nuevos desafíos.</p>
+      <button onclick="showPage('misiones')">Entrar</button>
+    </article>
+  </div>
+</section>
+
+<section id="tienda" class="page">
+  <h1>Tienda de Raven Strike</h1>
+  <p>Personaliza tu personaje con objetos exclusivos.</p>
+  <div id="shop-products" class="cards"></div>
+</section>
+
+<section id="pase" class="page">
+  <div class="hero small-hero">
+    <p class="eyebrow">TEMPORADA 1</p>
+    <h1>PASE DE BATALLA</h1>
+    <p>50 niveles de recompensas y objetos exclusivos.</p>
+    <button class="primary" onclick="buyPass()">Comprar pase prémium · 950 Coins</button>
+  </div>
+
+  <h2>Recompensas</h2>
+  <div id="rewards" class="cards"></div>
+</section>
+
+<section id="coins" class="page">
+  <h1>Raven Coins</h1>
+  <p>La moneda oficial de Raven Games.</p>
+  <div class="hero small-hero">
+    <h2>🐦‍⬛ <span id="coin-balance">2500</span> Raven Coins</h2>
+    <p>Saldo de demostración.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <h3>500 Coins</h3>
+      <p>Paquete pequeño</p>
+      <button onclick="demoCoins(500)">Probar paquete</button>
+    </article>
+    <article class="card">
+      <h3>1.000 Coins</h3>
+      <p>Paquete mediano</p>
+      <button onclick="demoCoins(1000)">Probar paquete</button>
+    </article>
+    <article class="card">
+      <h3>2.500 Coins</h3>
+      <p>Paquete grande</p>
+      <button onclick="demoCoins(2500)">Probar paquete</button>
+    </article>
+  </div>
+  <p class="notice">Las monedas son ficticias y solo funcionan como demostración.</p>
+</section>
+
+<section id="misiones" class="page">
+  <h1>Misiones</h1>
+  <p>Completa desafíos para conseguir recompensas.</p>
+  <div id="mission-list" class="cards"></div>
+</section>
+
+<section id="amigos" class="page">
+  <h1>Amigos</h1>
+  <p>Tu zona social de Raven Strike.</p>
+  <div class="card">
+    <h3>Invitar a un amigo</h3>
+    <input id="friend-name" placeholder="Nombre del jugador">
+    <button onclick="addFriend()">Añadir amigo</button>
+  </div>
+  <div id="friend-list" class="cards"></div>
+</section>
+
+<section id="noticias" class="page">
+  <h1>Noticias de Raven Games</h1>
+  <div class="cards">
+    <article class="card">
+      <h3>🌑 Temporada 1</h3>
+      <p>Comienza una nueva etapa en Raven Strike.</p>
+    </article>
+    <article class="card">
+      <h3>🛍️ Nueva tienda</h3>
+      <p>Llegan nuevos diseños y accesorios.</p>
+    </article>
+    <article class="card">
+      <h3>🐦‍⬛ Raven Coins</h3>
+      <p>Conoce nuestra moneda virtual.</p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h3>🐦‍⬛ RAVEN GAMES</h3>
+  <p>Creando nuevas experiencias de videojuegos.</p>
+  <p>© 2026 Raven Games · Proyecto de demostración</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

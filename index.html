@@ -10,8 +10,15 @@
 <body>
 <header>
  <div class="wrap nav">
-  <a class="brand" href="#inicio" aria-label="Raven Games inicio"><img class="brand-logo" src="raven-logo.png" alt="Emblema original de Raven Games"><span>RAVEN<small>G A M E S</small></span></a>
-  <nav class="links" id="navlinks"><a href="#inicio">Inicio</a><a href="raven-strike.html">Raven Strike</a><a href="assets/ravenstrike.mp4">Tráiler</a><a href="#juego">Características</a><a href="#tienda">Tienda</a><a href="#noticias">Noticias</a></nav>
+ <a class="brand" href="index.html#inicio" aria-label="Raven Games inicio"><img class="brand-logo" src="raven-logo.png" alt="Emblema original de Raven Games"><span>RAVEN<small>G A M E S</small></span></a>
+  <nav class="links" id="navlinks">
+   <a href="index.html#inicio">Inicio</a>
+   <a href="raven-strike.html">Raven Strike</a>
+   <a href="assets/ravenstrike.mp4">Tráiler</a>
+   <a href="#juego">Características</a>
+   <a href="#tienda">Tienda</a>
+   <a href="#noticias">Noticias</a>
+  </nav>
   <a class="btn" href="login.html">Iniciar sesión</a>
   <button class="menu" aria-label="Abrir menú" onclick="document.getElementById('navlinks').classList.toggle('show')">☰</button>
  </div>
@@ -67,7 +74,22 @@
 </section>
 <section id="comunidad"><div class="wrap"><div class="cta"><div><div class="eyebrow" style="color:#e4f7ff">Únete a la próxima aventura</div><h2>El universo Raven Strike te espera.</h2><p>Descubre el proyecto y acompaña su evolución.</p></div><button class="btn" style="background:#fff;color:#18223b" onclick="openModal('community')">Quiero saber más ↗</button></div></div></section>
 </main>
-<footer><div class="wrap foot"><a class="brand" href="#inicio"><img class="brand-logo" src="raven-logo.png" alt="Emblema original de Raven Games"><span>RAVEN<small>G A M E S</small></span></a><div class="foot-links"><a href="raven-strike.html">Raven Strike</a><a href="raven-strike.html#trailer">Tráiler</a><a href="#tienda">Tienda</a><a href="#noticias">Noticias</a><a href="login.html">Iniciar sesión</a></div><span>© 2026 Raven Games · Proyecto conceptual</span></div></footer>
+<footer>
+ <div class="wrap foot">
+  <a class="brand" href="index.html#inicio">
+   <img class="brand-logo" src="raven-logo.png" alt="Emblema original de Raven Games">
+   <span>RAVEN<small>G A M E S</small></span>
+  </a>
+  <div class="foot-links">
+   <a href="raven-strike.html">Raven Strike</a>
+   <a href="raven-strike.html#trailer">Tráiler</a>
+   <a href="#tienda">Tienda</a>
+   <a href="#noticias">Noticias</a>
+   <a href="login.html">Iniciar sesión</a>
+  </div>
+  <span>© 2026 Raven Games · Proyecto conceptual</span>
+ </div>
+</footer>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="close" aria-label="Cerrar" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
 <script src="script.js"></script>
 </body>
